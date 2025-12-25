@@ -1,6 +1,7 @@
 🐔 Bird Counting & Weight Estimation from Poultry CCTV
 
-Candidate: Bhavya
+Author: Bhavya
+
 Role Applied: Machine Learning / AI Engineer Intern
 
 1. Project Overview
@@ -40,13 +41,15 @@ Because GitHub does not allow large ML files, model, videos, and outputs are hos
 Download the following from Google Drive and place them in the project as shown.
 
 Content	Download Link
+```
 YOLO poultry model (best.pt)	https://drive.google.com/drive/folders/1HfqeeEwd9XPt83qeKilN_4_S2yQWLHSa?usp=sharing
 
 Input CCTV video (sample.mp4)	https://drive.google.com/drive/folders/1O6RGcFN1Oe_PKI1kUatcVGyVHgytAS1S?usp=sharing
 
 
 Output video + JSON	https://drive.google.com/drive/folders/1AAmCB-M3ghFMgu1JaG7qZmKL4M2HAKvB?usp=sharing
-
+```
+```
 Place them inside the project like this:
 
 bird_count_weight/
@@ -60,7 +63,8 @@ bird_count_weight/
 │   │   └── tracking_output.mp4
 │   └── json/
 │       └── counts.json
-
+```
+```
 4. Folder Structure
 bird_count_weight/
 ├── models/                 ← YOLO model (from Drive)
@@ -76,7 +80,7 @@ bird_count_weight/
 ├── test_tracking.py        ← Full ML pipeline
 ├── requirements.txt
 └── README.md
-
+```
 5. How Detection & Tracking Work
 
 A poultry-trained YOLOv8 model (best.pt) is used.
@@ -115,24 +119,25 @@ This gives a normalized size estimate of birds.
 The system computes the average weight index per frame.
 
 8. How to Run the Project
+```
 Step 1 — Install dependencies
 pip install -r requirements.txt
 
 Step 2 — Run the ML pipeline
 python test_tracking.py
-
+```
 
 This generates:
-
+```
 outputs/videos/tracking_output.mp4
 outputs/json/counts.json
-
+```
 Step 3 — View results
 
 Open:
-
+```
 outputs/videos/tracking_output.mp4
-
+```
 
 You will see:
 
@@ -145,13 +150,14 @@ Bird count
 Weight index
 
 Open:
-
+```
 outputs/json/counts.json
-
+```
 
 This contains the full time-series.
 
 9. Example JSON Output
+```
 {
   "fps": 19.896,
   "frame_skip": 3,
@@ -168,28 +174,28 @@ This contains the full time-series.
     }
   ]
 }
-
-10. Running the API
+```
+11. Running the API
 
 Start the API:
-
+```
 uvicorn app.main:app --reload
-
+```
 
 Health check:
-
+```
 http://127.0.0.1:8000/health
-
+```
 
 API UI:
-
+```
 http://127.0.0.1:8000/docs
-
+```
 
 Upload sample.mp4 in /analyze_video and click Execute.
 
 Sample API response:
-
+```
 {
   "fps": 19.896,
   "frame_skip": 3,
@@ -202,7 +208,7 @@ Sample API response:
   ],
   "output_video": "outputs/videos/tracking_output.mp4"
 }
-
+```
 11. What the Evaluator Should Check
 
 To verify this submission:
