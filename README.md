@@ -42,12 +42,12 @@ Download the following from Google Drive and place them in the project as shown.
 
 Content	Download Link
 ```
-YOLO poultry model (best.pt)	https://drive.google.com/drive/folders/1HfqeeEwd9XPt83qeKilN_4_S2yQWLHSa?usp=sharing
+YOLO poultry model (best.pt) -	   https://drive.google.com/drive/folders/1HfqeeEwd9XPt83qeKilN_4_S2yQWLHSa?usp=sharing
 
-Input CCTV video (sample.mp4)	https://drive.google.com/drive/folders/1O6RGcFN1Oe_PKI1kUatcVGyVHgytAS1S?usp=sharing
+Input CCTV video (sample.mp4) - 	 https://drive.google.com/drive/folders/1O6RGcFN1Oe_PKI1kUatcVGyVHgytAS1S?usp=sharing
 
 
-Output video + JSON	https://drive.google.com/drive/folders/1AAmCB-M3ghFMgu1JaG7qZmKL4M2HAKvB?usp=sharing
+Output video + JSON	 -             https://drive.google.com/drive/folders/1AAmCB-M3ghFMgu1JaG7qZmKL4M2HAKvB?usp=sharing
 ```
 ```
 Place them inside the project like this:
